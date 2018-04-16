@@ -3,7 +3,7 @@ import 'dart:convert' show JSON;
 
 class QiitaItemsFactory {
   static List<QiitaItem> create(String jsonString) {
-    List<Map<String, Object>> json = JSON.decode(jsonString);
+    List<dynamic> json = JSON.decode(jsonString);
 
     return json.map((dic) {
       var item = new QiitaItem();
