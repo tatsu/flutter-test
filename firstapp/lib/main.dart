@@ -29,7 +29,7 @@ class _QiitaItemsState extends State<QiitaApp> {
       });
     };
 
-    var listView = new ScrollableList(key: _listViewKey, itemExtent:70.0, children:_createWidgets(_items), );
+    var listView = new ListView(key: _listViewKey, itemExtent:70.0, children:_createWidgets(_items), );
     var container = new Container(height: 300.0, child: listView);
     return new Material(
         child: new Column(
