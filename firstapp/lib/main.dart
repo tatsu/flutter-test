@@ -77,7 +77,7 @@ class MyAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Container(
       height: 55.0,
-      decoration: new BoxDecoration(backgroundColor: Colors.blue[500]),
+      decoration: new BoxDecoration(color: Colors.blue[500]),
     );
   }
 }
