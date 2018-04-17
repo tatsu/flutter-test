@@ -9,7 +9,7 @@ class QiitaClient {
 
   Future<String> get() async {
 
-    var completer = new Completer();
+    var completer = new Completer<String>();
 
     var client = new HttpClient();
     var request = await client.getUrl(Uri.parse(_api_root + "/v2/items"));
